@@ -3,7 +3,7 @@ import {ACTION_1} from './action'
 const initialState ={
 	loading : false,
 	text    :'whatever you want'
-};
+}
 
 export default reducer = (state = initialState, action) => {
 	
@@ -23,4 +23,4 @@ export default reducer = (state = initialState, action) => {
 
 	}
 
-};
+}

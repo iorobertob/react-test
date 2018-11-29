@@ -8,20 +8,20 @@ import Root from './src/index'
 
 import { connect} from 'react-redux';
 
-import reducer from './src/store/reducer'
+import reducer from './src/store/reducer';
 
 
 const rootReducer = combineReducers({
   events: reducer
+  //another_reducer_name : another_reducer
 })
 
 const store = createStore(rootReducer);
 
 export default class App extends React.Component {
   render() {
-    console.log(this.props);
     return (
-      <Provider store ={store}>
+      <Provider store={store}>
         <Root/>
       </Provider>
     );
