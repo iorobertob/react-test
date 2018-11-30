@@ -4,18 +4,24 @@ import { StyleSheet, Text, View }       from 'react-native';
 import { connect}   from 'react-redux';
 import { changeText} from '../store/action';
 import {createStackNavigator} from 'react-navigation';
+import { MapView } from 'expo';
 
 class Home extends React.Component {
   render() {
 
-    console.log("blah",this.props.navigation);
     return (
         
         <View style={styles.container}>
-          <Text>{this.props.text}</Text>
-          <MyButton pressThisButton={()=>{
-            this.props.navigation.navigate('SecondPage')}}/>
+          <MapView
+            style={{ flex: 1 }}
+            initialRegion={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}/>
         </View>
+ 
     );
   }
 }

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "COMPENDIUM",
-    "description": "This project is really great.",
+    "description": "This is the Compendium catalogue project.",
     "slug": "COMPENDIUM",
     "privacy": "public",
     "sdkVersion": "31.0.0",
@@ -21,7 +21,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas-block.compendium"
+
+    // "config": {
+
+   
+        /*
+        Google Maps iOS SDK key for your standalone app. 
+
+        developers.google.com/maps/documentation/ios-sdk/start
+        */
+        // "googleMapsApiKey": "AIzaSyAOkmxmIn9OZy-J_ZExZKf0x2M8i2fd6kM",
+
+      // }
+    },
+    // "android": {
+    //    "package": "com.ideas-block.compendium",
+    //    /*
+    //    Google maps
+    //    */
+    //    "googleMaps": {
+    //     /*
+    //       Your Google Maps Android SDK API key
+    //     */
+    //       "apiKey": "AIzaSyAOkmxmIn9OZy-J_ZExZKf0x2M8i2fd6kM"
+    //   }
+    // }
   }
 }
